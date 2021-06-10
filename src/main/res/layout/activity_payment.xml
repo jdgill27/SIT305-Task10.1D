@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="351dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="79dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/paynow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/food_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Burger" />
+
+        <EditText
+            android:id="@+id/food_item_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:ems="10"
+            android:hint="1"
+            android:inputType="textPersonName"
+            android:text="6" />
+
+        <EditText
+            android:id="@+id/food_item_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="$120" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/paynow"
+        android:layout_width="281dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="598dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="82dp"
+        android:text="Pay Using Paypal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="158dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="173dp"
+        android:text="Cart Items:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="234dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/b" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
